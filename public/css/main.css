@@ -1,0 +1,179 @@
+html,body {
+    height:100%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.roboto {
+    font-family: "Roboto";
+}
+.opensans {
+    font-family: "Open Sans";
+}
+.font-size-12 {
+    font-size: 12px!important;
+}
+.font-size-14 {
+    font-size: 14px!important;
+}
+.font-size-16 {
+    font-size: 16px!important;
+}
+.font-size-18 {
+    font-size: 18px!important;
+}
+.font-size-20 {
+    font-size: 20px!important;
+}
+.font-size-22 {
+    font-size: 22px!important;
+}
+.font-size-24 {
+    font-size: 24px!important;
+}
+.font-size-26 {
+    font-size: 26px!important;
+}
+.font-size-28 {
+    font-size: 28px!important;
+}
+.line-height-100 {
+    line-height: 100%;
+}
+.line-height-110 {
+    line-height: 110%;
+}
+.line-height-120 {
+    line-height: 120%;
+}
+.line-height-130 {
+    line-height: 130%;
+}
+.line-height-140 {
+    line-height: 140%;
+}
+.line-height-150 {
+    line-height: 150%;
+}
+.line-height-160 {
+    line-height: 160%;
+}
+.line-height-170 {
+    line-height: 170%;
+}
+.line-height-180 {
+    line-height: 180%;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    /*background-color:grey;*/
+    /*background-image: url('https://to-moore.com/images/beeline.png');*/
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.preloader .first{
+    animation: scaler 0.8s infinite 0s;
+}
+.preloader .second {
+    animation: scaler 0.8s infinite 0.1s;
+}
+.preloader .third {
+    animation: scaler 0.8s infinite 0.2s;
+}
+.preloader .fourth {
+    animation: scaler 0.8s infinite 0.3s;
+}
+@keyframes scaler {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.sidebar {
+    transition: 0.2s;
+    background:#2A2F42;
+    z-index:9999;
+}
+@media screen and (max-width: 762px) {
+    .sidebar {
+        display:none;
+        position: fixed!important;
+        top:0%;
+    }
+}
+/*.sidebar.show {*/
+    /*width:200px;*/
+/*}*/
+.sidebar-point {
+    transition: 0.4s;
+    position: relative;
+    color:#71758E;
+    cursor: pointer;
+}
+.sidebar-point:hover {
+    background-color: #fefefe;
+    border-radius: 30px 0%  0% 30px;
+}
+.sidebar-point:hover .sidebar-name {
+    color: #000000;
+    font-weight: 500;
+}
+.sidebar-name {
+    /*overflow: hidden;*/
+    /*width:0px;*/
+    transition: 0.5s;
+    /*display: none;*/
+}
+.notification-alert {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0%;
+    top:10%;
+}
+.taco-btn {
+    border-radius: 10px;
+    background-color: #556CE0;
+    color: white;
+    transition: 0.4s;
+}
+.taco-btn:hover {
+    box-shadow:0px 9px 16px rgba(0, 0, 0, 0.28);
+}
+.taco-btn-2 {
+    border-radius: 10px;
+    background-color: #fefefe;
+    color: black;
+    transition: 0.4s;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.18);
+}
+.taco-btn-2:hover {
+    background-color: #556CE0;
+    color: #fefefe;
+}
+.taco-link {
+    text-decoration: none!important;
+    outline: none!important;
+}
+.content-box {
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.18);
+    border-radius:10px;
+}
+/*.sidebar-name.show {*/
+    /*!*display: inline;*!*/
+    /*width:150px;*/
+/*}*/
