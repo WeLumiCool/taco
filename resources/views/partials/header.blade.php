@@ -17,7 +17,7 @@
 
                 <!-- Authentication Links -->
                 <div class="ml-auto d-flex">
-                    @if(Auth::user()->role->name == 'admin')
+                    @if(Auth::user()->role->name == 'user')
                     <div class="d-flex align-items-center dropdown">
                         <button class="btn taco-btn font-size-18 nav-item nav-link dropdown-toggle text-white" data-toggle="dropdown">Добавить рекламную кампанию</button>
 

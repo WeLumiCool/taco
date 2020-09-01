@@ -18,6 +18,12 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+//ADMIN
+Route::get('profile/admin','UserController@admin')->name('profile/admin');
+Route::post('admin/switch', 'AdminController@switch')->name('admin/switch');
+Route::get('/getUsers', 'AdminController@getUsers')->name('getUsers');
+Route::post('admin/create/user', 'AdminController@create_user')->name('admin/create/user');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('profile/edit','UserController@edit')->name('profile/edit');

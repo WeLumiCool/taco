@@ -6,22 +6,22 @@
     </h3>
     <div class="row mt-5">
         <div class="col-lg-3 col-6">
-            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                 Период
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                 Сумма
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                 Оффер+контент
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                 Комментарии
             </p>
         </div>
@@ -29,27 +29,27 @@
     <hr>
     <div class="row">
         <div class="col-lg-3 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 7 jun-02 aug
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 500$
             </p>
         </div>
         <div class="col-lg-3 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 Сумки
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 описание
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 <a href="#" class="small ml-lg-2 ml-0">Подтвердить</a>
             </p>
         </div>
@@ -57,27 +57,27 @@
     <hr>
     <div class="row">
         <div class="col-lg-3 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 7 jun-02 aug
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 500$
             </p>
         </div>
         <div class="col-lg-3 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 Телефоны
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 описание
             </p>
         </div>
         <div class="col-lg-2 col-6">
-            <p class="font-size-16 mb-0 text-secondary">
+            <p class="font-size-16 mb-0 text-black-50">
                 <a href="#" class="small ml-lg-2 ml-0">Подтвердить</a>
             </p>
         </div>
@@ -90,22 +90,22 @@
             </h3>
             <div class="row mt-5">
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                    <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                         Период
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                    <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                         Сумма
                     </p>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                    <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                         Оффер+контент
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                    <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                         Комментарии
                     </p>
                 </div>
@@ -113,27 +113,27 @@
             <hr>
             <div class="row">
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         7 jun-02 aug
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         500$
                     </p>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         Сумки
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         описание
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         <a href="#" class="small ml-lg-2 ml-0">Подтвердить</a>
                     </p>
                 </div>
@@ -141,27 +141,27 @@
             <hr>
             <div class="row">
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         7 jun-02 aug
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         500$
                     </p>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         Телефоны
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         описание
                     </p>
                 </div>
                 <div class="col-lg-2 col-6">
-                    <p class="font-size-16 mb-0 text-secondary">
+                    <p class="font-size-16 mb-0 text-black-50">
                         <a href="#" class="small ml-lg-2 ml-0">Подтвердить</a>
                     </p>
                 </div>

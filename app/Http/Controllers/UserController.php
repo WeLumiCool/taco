@@ -14,4 +14,8 @@ class UserController extends Controller
 
         return view('client.profile.edit',['user' => $user]);
     }
+
+    public function admin() {
+        return view('admin.index');
+    }
 }

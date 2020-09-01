@@ -14,6 +14,13 @@
             <div class="d-flex align-items-center"><i class="far fa-user fa-lg" style="width:50px;"></i></div><span class="ml-2 sidebar-name font-size-16 line-height-120 opensans">Профиль</span>
         </div>
             <div id="collapseOne" class="collapse ml-4 border-bottom" aria-labelledby="headingOne" data-parent="#accordionExample">
+                @if(Auth::user()->role->name == 'admin')
+                <a class="taco-link" href="{{ route('profile/admin') }}">
+                    <div class="p-3 d-flex align-items-center sidebar-point">
+                        <div class="d-flex align-items-center"><i class="fas fa-user-circle" style="width:30px;"></i></div><span class="ml-1 sidebar-name font-size-16 line-height-120 opensans">Админ панель</span>
+                    </div>
+                </a>
+                @endif
                 <a class="taco-link" href="{{ route('profile/edit') }}">
                 <div class="p-3 d-flex align-items-center sidebar-point">
                     <div class="d-flex align-items-center"><i class="fas fa-cogs" style="width:30px;"></i></div><span class="ml-1 sidebar-name font-size-16 line-height-120 opensans">редактировать</span>
@@ -31,7 +38,7 @@
                 </form>
             </div>
         </div>
-        @if(Auth::user()->role->name == 'admin')
+        @if(Auth::user()->role->name == 'user')
         <a class="taco-link" href="{{ route('companies/index') }}">
         <div class="p-3 d-flex align-items-center sidebar-point">
             <div class="d-flex align-items-center"><i class="far fa-handshake fa-lg" style="width:50px;"></i></div><span class="ml-2 sidebar-name font-size-16 line-height-120 opensans">Рекламные компании</span>
@@ -61,7 +68,7 @@
                     </div>
                 </div>
         @endif
-        @if(Auth::user()->role->name == 'user')
+        @if(Auth::user()->role->name == 'user2')
             <a class="taco-link" href="{{ route('bid/index') }}">
                 <div class="p-3 d-flex align-items-center sidebar-point">
                     <div class="d-flex align-items-center"><i class="far fa-handshake fa-lg" style="width:50px;"></i></div><span class="ml-2 sidebar-name font-size-16 line-height-120 opensans">Заявки</span>

@@ -122,14 +122,15 @@ html,body {
     color:#71758E;
     cursor: pointer;
 }
-.sidebar-point:hover {
+.sidebar-point:hover, .sidebar-point.active {
     background-color: #fefefe;
     border-radius: 30px 0%  0% 30px;
 }
-.sidebar-point:hover .sidebar-name {
+.sidebar-point:hover .sidebar-name, .sidebar-point.active .sidebar-name {
     color: #000000;
     font-weight: 500;
 }
+
 .sidebar-name {
     /*overflow: hidden;*/
     /*width:0px;*/
@@ -172,6 +173,47 @@ html,body {
 .content-box {
     box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.18);
     border-radius:10px;
+}
+.admin-tab {
+    color: #000000;
+    border-radius: 0px!important;
+    margin-right: 10px;
+}
+
+.admin-tab.active {
+    transition: 0.5s;
+    border: 1px solid #2A2F42!important;
+}
+.add-widget {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #d9d9d6;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom:5%;
+    right:3%;
+}
+.add-widget:hover{
+    animation: 0.5s add-widget ease-in-out;
+}
+@keyframes add-widget {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    75% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 /*.sidebar-name.show {*/
     /*!*display: inline;*!*/
