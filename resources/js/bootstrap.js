@@ -11,6 +11,13 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('@jkryszto/mdb-for-laravel/js/mdb.min');
+    require('@jkryszto/mdb-for-laravel/js/bootstrap.min');
+    require('@jkryszto/mdb-for-laravel/js/modules/forms-free');
+    // require('mdbootstrap/js/mdb');
+    // require('mdbootstrap/js/modules/forms-free.min');
+
+
 } catch (e) {}
 
 /**

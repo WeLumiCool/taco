@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $html = file_get_html('https://www.akchabar.kg/ru/exchange-rates/');
+
+        $html->find('div',1)->id = 'rates';
+        dd($html->find('div',1)->id = 'rates');
+
         return view('welcome');
     }
 

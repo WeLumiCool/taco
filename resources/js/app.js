@@ -4,10 +4,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import VueRouter from 'vue-router';
-
 require('./bootstrap');
+
+// require('/mdbootstrap/js/popper.js');
 // require('mdbootstrap/js/bootstrap.min');
-// require('mdbootstrap/js/mdb.min');
+// require('mdbootstrap/js/mdb');
 // require('mdbootstrap/js/bootstrap.min');
 
 window.Vue = require('vue');

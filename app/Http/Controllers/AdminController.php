@@ -45,4 +45,9 @@ public function getUsers()
     {
         return view('admin.create.user');
     }
+
+    public function UserStore(Request $request)
+    {
+        dd($request->all());
+    }
 }
