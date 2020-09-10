@@ -92,6 +92,11 @@
                 {{--@endif--}}
               </div>
             </div>
+            <div class="mt-3 text-center">
+              <a href="/term_of_use">
+                Договор по офферте
+              </a>
+            </div>
           </form>
         </div>
       </div>
