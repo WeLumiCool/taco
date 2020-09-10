@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-7 d-flex align-items-center">
-                        <p class="text-secondary">(VK, Facebook, Tik Tok)</p>
+                        <p class="text-black-50">(VK, Facebook, Tik Tok)</p>
                     </div>
                 </div>
                 <div class="row mt-1">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-6">
-                        <p class="font-size-16 mb-0 text-secondary">
+                        <p class="font-size-16 mb-0 text-black-50">
                             <a href="#" class="font-size-16 ml-2">Подробнее</a>
                         </p>
                     </div>
@@ -68,27 +68,27 @@
                     <div class="col-lg-9 col-12">
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Название
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Охват
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Аудитория
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Стоимость
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Регион
                                 </p>
                             </div>
@@ -96,27 +96,27 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Сообщество
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     24000
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Девочки
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     200$
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     ЦА
                                 </p>
                             </div>
@@ -124,27 +124,27 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Блогер
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     250
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Мальчики
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     30$
                                 </p>
                             </div>
                             <div class="col-lg-2 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     СНГ
                                 </p>
                             </div>
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-6">
-                        <p class="font-size-16 mb-0 text-secondary">
+                        <p class="font-size-16 mb-0 text-black-50">
                             <a href="#" class="font-size-16 ml-2">Подробнее</a>
                         </p>
                     </div>
@@ -187,17 +187,17 @@
                     <div class="col-lg-6 col-12">
                         <div class="row">
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Тип
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Стоимость
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Охват
                                 </p>
                             </div>
@@ -205,17 +205,17 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Новости
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     200$
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     24000
                                 </p>
                             </div>
@@ -223,17 +223,17 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Фильмы
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     30$
                                 </p>
                             </div>
                             <div class="col-lg-4 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     250
                                 </p>
                             </div>

@@ -8,16 +8,16 @@
             <div class="col-12 mt-5">
                 <div class="row">
                     <div class="col-lg-4 col-12">
-                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                             Незавершенные кампании
                         </button>
-                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                             Ожидают подтверждения
                         </button>
-                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                             Активные кампании
                         </button>
-                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                        <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                             Завершенные
                         </button>
                     </div>
@@ -112,19 +112,19 @@
             </h3>
             <div class="row mt-4">
                 <div class="col-lg-4 col-12 px-5">
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         CTM
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Охват
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Целевая аудитория
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Частота показов
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Платформа
                     </button>
                 </div>

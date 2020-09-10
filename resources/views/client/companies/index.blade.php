@@ -9,16 +9,16 @@
                 <div class="col-12 mt-5">
                     <div class="row">
                         <div class="col-lg-4 col-12">
-                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                                 Незавершенные кампании
                             </button>
-                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                                 Ожидают подтверждения
                             </button>
-                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                                 Активные кампании
                             </button>
-                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                            <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                                 Завершенные
                             </button>
                         </div>

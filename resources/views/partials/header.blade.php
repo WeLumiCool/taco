@@ -19,7 +19,7 @@
                 <div class="ml-auto d-flex">
                     @if(Auth::user()->role->name == 'user')
                     <div class="d-flex align-items-center dropdown">
-                        <button class="btn taco-btn font-size-18 nav-item nav-link dropdown-toggle text-white" data-toggle="dropdown">Добавить рекламную кампанию</button>
+                        <button class="btn taco-btn font-size-14 nav-item nav-link dropdown-toggle text-white" data-toggle="dropdown">Добавить рекламную кампанию</button>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('companies/online') }}">

@@ -12,7 +12,7 @@
                             <input type="text" class="form-control" placeholder="Город, улица, адрес">
                         </div>
                     </div>
-                    <div class="col-lg-1 col-6">
+                    <div class="col-lg-3 col-6">
                         <button class="btn taco-btn w-100">Поиск</button>
                     </div>
                 </div>
@@ -23,22 +23,22 @@
                 <div class="col-lg-9 col-12 mt-lg-0 mt-3">
                     <div class="row">
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                 Адрес
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                 Количество показов
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                 Аудитория
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                 Стоимость
                             </p>
                         </div>
@@ -46,22 +46,22 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 Московская 15
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 24000
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 Девочки
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 500$
                                 <a href="#" class="small ml-2">Подробнее</a>
                             </p>
@@ -70,22 +70,22 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 Чуй 150
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 5000
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 Мальчики
                             </p>
                         </div>
                         <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-secondary">
+                            <p class="font-size-16 mb-0 text-black-50">
                                 400$
                                 <a href="#" class="small ml-2">Подробнее</a>
                             </p>
@@ -102,17 +102,17 @@
                         </h3>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Название
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Время показа
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Статистика
                                 </p>
                             </div>
@@ -120,22 +120,22 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     7 jun-02 aug
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     500$
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Сумки
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     <a href="#" class="small ml-2">Подробнее</a>
                                 </p>
                             </div>
@@ -143,22 +143,22 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     7 jun-02 aug
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     500$
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Телефоны
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     <a href="#" class="small ml-2">Подробнее</a>
                                 </p>
                             </div>
@@ -174,17 +174,17 @@
                         </h3>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Название
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Время показа
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-secondary">
+                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
                                     Статистика
                                 </p>
                             </div>
@@ -192,22 +192,22 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     7 jun-02 aug
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     500$
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Сумки
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     <a href="#" class="small ml-2">Подробнее</a>
                                 </p>
                             </div>
@@ -215,22 +215,22 @@
                         <hr>
                         <div class="row">
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     7 jun-02 aug
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     500$
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     Телефоны
                                 </p>
                             </div>
                             <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-secondary">
+                                <p class="font-size-16 mb-0 text-black-50">
                                     <a href="#" class="small ml-2">Подробнее</a>
                                 </p>
                             </div>

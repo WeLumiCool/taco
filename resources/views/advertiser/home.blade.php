@@ -171,19 +171,19 @@
         <div class="col-12 bg-white py-4 px-3 content-box mt-5 mx-auto">
             <div class="row mt-4">
                 <div class="col-lg-4 col-12 px-5">
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Кол-во переходов по РК
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Кол-во переходов по GPA
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         $ заработано
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Кол-во активных РК
                     </button>
-                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-16">
+                    <button class="btn taco-btn-2 w-100 mb-3 py-2 font-size-12">
                         Кол-во завершенных РК
                     </button>
                 </div>
