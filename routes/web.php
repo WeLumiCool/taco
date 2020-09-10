@@ -16,14 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('term_of_use','UserController@term')->name('term_of_use');
 
 Auth::routes();
 //ADMIN
 Route::get('profile/admin','UserController@admin')->name('profile/admin');
 Route::post('admin/switch', 'AdminController@switch')->name('admin/switch');
+//user
 Route::get('/getUsers', 'AdminController@getUsers')->name('getUsers');
+Route::get('/getUser/{id}', 'AdminController@getUser')->name('getUser');
 Route::post('admin/create/user', 'AdminController@create_user')->name('admin/create/user');
 Route::post('/UserStore', 'AdminController@UserStore')->name('UserStore');
+//advertiser
+Route::get('/getAdvertisers','AdminController@getAdvertisers')->name('getAdvertisers');
+Route::get('/DataForAdvertiser', 'AdminController@DataForAdvertiser')->name('DataForAdvertiser');
+
+
+
+Route::post('/EmailCheck','UserController@EmailCheck')->name('EmailCheck');
+Route::post('/PhoneCheck','UserController@PhoneCheck')->name('PhoneCheck');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

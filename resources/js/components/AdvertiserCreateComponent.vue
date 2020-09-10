@@ -2,12 +2,12 @@
     <div class="container bg-white p-4 rounded">
         <div class="row">
             <div class="col-4">
-                <router-link to="/users">
+                <router-link to="/advertisers">
                     <p class="text-dark">Назад к списку</p>
                 </router-link>
             </div>
             <div class="col-8">
-                <h4 class="opensans text-center">Создание пользователя</h4>
+                <h4 class="opensans text-center">Создание рекламодателя</h4>
             </div>
         </div>
         <hr>
@@ -46,12 +46,12 @@
                     </div>
                     <div class="col-6">
                         <div class="md-form mt-0">
-                            <input type="text" name="company" id="company" class="form-control" placeholder="Компания" required>
+                            <input type="text" name="nickname" id="nickname" class="form-control" placeholder="Никнейм (Медийное имя)" required>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="md-form mt-0">
-                            <input type="text" name="position" id="position" class="form-control" placeholder="Должность" required>
+                            <input type="text" name="url" id="url" class="form-control" placeholder="Ссылка на платформу" required>
                         </div>
                     </div>
                     <div class="col-6">
@@ -59,14 +59,32 @@
                             <input type="text" name="password" id="password" class="form-control" placeholder="Пароль" required>
                         </div>
                     </div>
+
+                    <div class="col-12">
+                        <div class="row border-top pt-3">
+                            <div class="col-6">
+                                <label for="category">Категория рекламы</label>
+                                <select class="browser-default custom-select" id="category" v-on:change="category()">
+                                    <option v-for="category in categories" :value="category.id">{{category.title}}</option>
+                                </select>
+                            </div>
+                            <div class="col-6" v-if="online == 1">
+                                <label for="category">Платформа рекламодателя</label>
+                                <select class="browser-default custom-select" id="type">
+                                    <option v-for="type in types" :value="type.id">{{ type.title }}</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
                     <!--<div class="col-6">-->
-                        <!--<div class="md-form mt-0">-->
-                            <!--<input type="text" class="form-control" placeholder="">-->
-                        <!--</div>-->
+                    <!--<div class="md-form mt-0">-->
+                    <!--<input type="text" class="form-control" placeholder="">-->
+                    <!--</div>-->
                     <!--</div>-->
                 </div>
 
-                <div type="submit" class="btn-success btn position-absolute" style="bottom: 5%; right: 5%;" @click="UserStore">Сохранить</div>
+                <div type="submit" class="btn-success btn mt-4" @click="UserStore">Сохранить</div>
             </div>
         </form>
 
@@ -79,11 +97,36 @@
             return {
                 storage_url: window.location.origin,
                 csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-                users: [],
+                categories: [],
+                types: [],
+                online: null,
             }
         },
 
+        mounted () {
+          this.update();
+        },
+
         methods: {
+            update: function () {
+                axios.get('/DataForAdvertiser').then((response) => {
+                   this.types = response.data.types;
+                   this.categories = response.data.categories;
+                });
+            },
+
+            category: function () {
+                var btn = document.getElementById('category');
+                if (btn.value == 2)
+                {
+                    this.online = 1;
+                }
+                else
+                {
+                    this.online = null;
+                }
+            },
+
             avatar: function () {
                 var btn = document.getElementById('file-label');
                 btn.classList.add('update-success');
@@ -133,16 +176,21 @@
                 formData.set('name', document.getElementById('name').value);
                 formData.set('email', document.getElementById('email').value);
                 formData.set('phone', document.getElementById('phone').value);
-                formData.set('company', document.getElementById('company').value);
-                formData.set('position', document.getElementById('position').value);
+                formData.set('nickname', document.getElementById('nickname').value);
+                formData.set('url', document.getElementById('url').value);
                 formData.set('password', document.getElementById('password').value);
                 formData.set('avatar', document.getElementById('file').files[0]);
-                formData.set('type', '1');
+                formData.set('type', '2');
+                formData.set('category', document.getElementById('category').value);
+                if (document.getElementById('category').value == 2)
+                {
+                    formData.set('typer', document.getElementById('type').value);
+                }
                 axios.post('/UserStore', formData).then((response) => {
                     this.$fire({
                         position: 'top-end',
                         icon: 'success',
-                        title: 'Пользователь создан',
+                        title: 'Рекламодатель создан',
                         showConfirmButton: false,
                         backdrop: false,
                         timer: 1500

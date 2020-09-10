@@ -28,6 +28,8 @@
         "@jkryszto/mdb-for-laravel": "^1.0.0",
         "mdbootstrap": "^4.19.1",
         "vue-router": "^3.4.3",
+        "vue-simple-alert": "^1.1.1",
+        "vue-sweetalert2": "^3.0.8",
         "vuex": "^3.5.1"
     }
 }

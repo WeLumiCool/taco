@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-white p-4 rounded">
+    <div class="container bg-white p-4 rounded" style="min-height: 75vh; overflow-y: auto; overflow-x: hidden;">
         <div class="row">
             <div class="col-12">
                 <h4 class="opensans text-center font-weight-bold">Пользователи</h4>
@@ -43,7 +43,9 @@
                     {{user.position}}
                 </div>
                 <div class="col-1 font-size-14 d-flex">
+                    <router-link :to="{ name: 'user_show', params: {id: user.id}} ">
                     <div class="bg-warning px-2 py-1 rounded "><i class="fas fa-user-edit text-white"></i></div>
+                    </router-link>
                 </div>
             </div>
         </div>

@@ -13,8 +13,10 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 window.Vuex = require('vuex');
+import Vue from "vue";
+import VueSimpleAlert from "vue-simple-alert";
 // window.VueRouter = require('vue-router');
-
+Vue.use(VueSimpleAlert);
 Vue.use(require('vuex'));
 Vue.use(VueRouter);
 /**
@@ -30,6 +32,7 @@ Vue.use(VueRouter);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('users-component', require('./components/UsersComponent.vue').default);
+Vue.component('users-component', require('./components/UsersComponent.vue').default);
 Vue.component('users-create-component', require('./components/UserCreateComponent.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -40,8 +43,11 @@ const router = new VueRouter({
     // mode: 'history',
     routes: [
         {path: '/users', name: 'users', component: require('./components/UsersComponent').default,},
+        {path: '/advertisers', name: 'advertisers', component: require('./components/AdvertiserComponent').default,},
         {path: '/example', name: 'example', component: require('./components/ExampleComponent').default},
         {path: '/user_create', name: 'user_create', component: require('./components/UserCreateComponent').default},
+        {path: '/advertiser_create', name: 'advertiser_create', component: require('./components/AdvertiserCreateComponent').default},
+        {path: '/user_show/:id', name: 'user_show', component: require('./components/UserShowComponent').default, props: true},
     ],
 });
 
