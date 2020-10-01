@@ -2117,6 +2117,706 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['id', 'type', 'case'],
+  data: function data() {
+    return {
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+      price: null,
+      kind: 'Сторис',
+      name: null,
+      desc: null,
+      price_weekdays: null,
+      price_weekend: null,
+      time: null,
+      category: 'Реклама',
+      typer: null,
+      position: null,
+      place: null
+    };
+  },
+  // mounted() {
+  //     this.update()
+  // },
+  methods: {
+    // update: function () {
+    //     if (this.case)
+    //     {
+    //
+    //     }
+    // },
+    CaseStore: function CaseStore() {
+      var _this = this;
+
+      if (this.type == 2) {
+        if (this.price != null && this.kind != null) {
+          var formData = new FormData();
+          formData.set('price', this.price);
+          formData.set('type', this.kind);
+          formData.set('case_type', this.type);
+          formData.set('id', this.id);
+          axios.post('/CaseStore', formData).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 3) {
+        if (this.price != null) {
+          var _formData = new FormData();
+
+          _formData.set('price', this.price);
+
+          _formData.set('case_type', this.type);
+
+          _formData.set('id', this.id);
+
+          axios.post('/CaseStore', _formData).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 4) {
+        if (this.price != null && this.name != null && this.desc != null) {
+          var _formData2 = new FormData();
+
+          _formData2.set('price', this.price);
+
+          _formData2.set('name', this.name);
+
+          _formData2.set('desc', this.desc);
+
+          _formData2.set('case_type', this.type);
+
+          _formData2.set('id', this.id);
+
+          axios.post('/CaseStore', _formData2).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 5) {
+        if (this.price != null) {
+          var _formData3 = new FormData();
+
+          _formData3.set('price', this.price);
+
+          _formData3.set('case_type', this.type);
+
+          _formData3.set('id', this.id);
+
+          axios.post('/CaseStore', _formData3).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 7) {
+        if (this.price_weekdays != null && this.price_weekend != null && this.time != null) {
+          var _formData4 = new FormData();
+
+          _formData4.set('price_weekdays', this.price_weekdays);
+
+          _formData4.set('price_weekend', this.price_weekend);
+
+          _formData4.set('time', this.time);
+
+          _formData4.set('case_type', this.type);
+
+          _formData4.set('id', this.id);
+
+          axios.post('/CaseStore', _formData4).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 8) {
+        if (this.price != null) {
+          var _formData5 = new FormData();
+
+          _formData5.set('time', this.time);
+
+          _formData5.set('type', this.typer);
+
+          _formData5.set('price', this.price);
+
+          _formData5.set('desc', this.desc);
+
+          _formData5.set('category', this.category);
+
+          _formData5.set('case_type', this.type);
+
+          _formData5.set('id', this.id);
+
+          axios.post('/CaseStore', _formData5).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      } else if (this.type == 9) {
+        if (this.price != null) {
+          var _formData6 = new FormData();
+
+          _formData6.set('type', this.typer);
+
+          _formData6.set('price', this.price);
+
+          _formData6.set('desc', this.desc);
+
+          _formData6.set('place', this.place);
+
+          _formData6.set('position', this.position);
+
+          _formData6.set('case_type', this.type);
+
+          _formData6.set('id', this.id);
+
+          axios.post('/CaseStore', _formData6).then(function (response) {
+            _this.$fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Кейс создан',
+              showConfirmButton: false,
+              backdrop: false,
+              timer: 1500
+            });
+          });
+        }
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['id'],
+  data: function data() {
+    return {
+      cases: [],
+      type: null,
+      advertiser: null
+    };
+  },
+  mounted: function mounted() {
+    this.update();
+  },
+  methods: {
+    update: function update() {
+      var _this = this;
+
+      axios.get('/getAdvertiserCases/' + this.id).then(function (response) {
+        console.log(response);
+        _this.cases = response.data.cases;
+        _this.type = response.data.type;
+        _this.advertiser = response.data.advertiser;
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserComponent.vue?vue&type=script&lang=js& ***!
@@ -2126,6 +2826,9 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -2327,8 +3030,7 @@ __webpack_require__.r(__webpack_exports__);
       storage_url: window.location.origin,
       csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
       categories: [],
-      types: [],
-      online: null
+      types: []
     };
   },
   mounted: function mounted() {
@@ -2344,13 +3046,12 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     category: function category() {
-      var btn = document.getElementById('category');
+      var _this2 = this;
 
-      if (btn.value == 2) {
-        this.online = 1;
-      } else {
-        this.online = null;
-      }
+      var btn = document.getElementById('category');
+      axios.get('/TypeChange/' + btn.value).then(function (response) {
+        _this2.types = response.data;
+      });
     },
     avatar: function avatar() {
       var btn = document.getElementById('file-label');
@@ -2386,7 +3087,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     UserStore: function UserStore() {
-      var _this2 = this;
+      var _this3 = this;
 
       var formData = new FormData();
       formData.set('name', document.getElementById('name').value);
@@ -2404,7 +3105,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       axios.post('/UserStore', formData).then(function (response) {
-        _this2.$fire({
+        _this3.$fire({
           position: 'top-end',
           icon: 'success',
           title: 'Рекламодатель создан',
@@ -38318,6 +39019,1603 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _vm.type == 2
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Инстаграм)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "price",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Тип рекламы")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group mt-0" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.kind,
+                        expression: "kind"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { name: "typeof", id: "typeof" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.kind = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "Сторис" } }, [
+                      _vm._v("Сторис")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Пост (Фото)" } }, [
+                      _vm._v("Пост (Фото)")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Пост (Видео)" } }, [
+                      _vm._v("Пост (Видео)")
+                    ])
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 3
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Tik Tok)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-8" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "price",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 4
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Youtube)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "price",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Название")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.name,
+                      expression: "name"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "name",
+                    id: "name",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.name = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Описание")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.desc,
+                      expression: "desc"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "desc",
+                    id: "desc",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.desc },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.desc = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 5
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Вконтакте)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-9" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "price",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 7
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Вконтакте)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена в будние дни")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price_weekdays,
+                      expression: "price_weekdays"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price_weekdays",
+                    id: "price_weekdays",
+                    placeholder: "Цена в будние дни",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price_weekdays },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price_weekdays = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена в выходные дни")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price_weekend,
+                      expression: "price_weekend"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price_weekend",
+                    id: "price_weekend",
+                    placeholder: "Цена в выходные дни",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price_weekend },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price_weekend = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Время")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.time,
+                      expression: "time"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "time",
+                    id: "time",
+                    placeholder: "Время",
+                    required: ""
+                  },
+                  domProps: { value: _vm.time },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.time = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 8
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Вконтакте)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Время")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.time,
+                      expression: "time"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "time",
+                    id: "time",
+                    placeholder: "Время",
+                    required: ""
+                  },
+                  domProps: { value: _vm.time },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.time = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Тип")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.typer,
+                      expression: "typer"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "kind",
+                    id: "kind",
+                    placeholder: "Тип",
+                    required: ""
+                  },
+                  domProps: { value: _vm.typer },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.typer = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "price",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Описание")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.desc,
+                      expression: "desc"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "desc",
+                    id: "desc",
+                    placeholder: "Описание",
+                    required: ""
+                  },
+                  domProps: { value: _vm.desc },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.desc = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Категория")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group mt-0" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.category,
+                        expression: "category"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { name: "typeof", id: "typeof" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.category = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "Реклама" } }, [
+                      _vm._v("Реклама")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Продукт" } }, [
+                      _vm._v("Продукт")
+                    ])
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 9
+      ? _c("div", { staticClass: "p-2" }, [
+          _c(
+            "h4",
+            { staticClass: "font-size-20 font-weight-bold text-center" },
+            [_vm._v("Создание кейса (Онлайн платформы)")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Тип")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.typer,
+                      expression: "typer"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "type",
+                    id: "type",
+                    placeholder: "Тип",
+                    required: ""
+                  },
+                  domProps: { value: _vm.typer },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.typer = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Позиция")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.position,
+                      expression: "position"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "position",
+                    id: "position",
+                    placeholder: "Позиция",
+                    required: ""
+                  },
+                  domProps: { value: _vm.position },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.position = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Платформа")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.place,
+                      expression: "place"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "place",
+                    id: "place",
+                    placeholder: "Платформа",
+                    required: ""
+                  },
+                  domProps: { value: _vm.place },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.place = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Описание")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.desc,
+                      expression: "desc"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "desc",
+                    id: "desc",
+                    placeholder: "Описание",
+                    required: ""
+                  },
+                  domProps: { value: _vm.desc },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.desc = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("p", { staticClass: "font-weight-bold mb-1" }, [
+                _vm._v("Цена")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-0" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.price,
+                      expression: "price"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "price",
+                    id: "number",
+                    placeholder: "Цена",
+                    required: ""
+                  },
+                  domProps: { value: _vm.price },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.price = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3 d-flex align-items-center" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success py-1",
+                  on: { click: _vm.CaseStore }
+                },
+                [_vm._v("Сохранить")]
+              )
+            ])
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _vm.type == 2
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.type))
+                ]),
+                _vm._v(" "),
+                _vm._m(1, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 3
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-6" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _vm._m(3, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 4
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-4" }, [
+                  _vm._v(_vm._s(advcase.name))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-4" }, [
+                  _vm._v(_vm._s(advcase.desc))
+                ]),
+                _vm._v(" "),
+                _vm._m(5, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 5
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(6),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-6" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _vm._m(7, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 7
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-4" }, [
+                  _vm._v(_vm._s(advcase.price_weekdays))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-4" }, [
+                  _vm._v(_vm._s(advcase.price_weekend))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-4" }, [
+                  _vm._v(_vm._s(advcase.time))
+                ]),
+                _vm._v(" "),
+                _vm._m(9, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 8
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(10),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.time))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.type))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.desc))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.category))
+                ]),
+                _vm._v(" "),
+                _vm._m(11, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.type == 9
+      ? _c(
+          "div",
+          { staticClass: "text-center" },
+          [
+            _c("div", { staticClass: "row mb-4" }, [
+              _c("div", { staticClass: "col-9" }, [
+                _c(
+                  "h4",
+                  { staticClass: "font-size-20 font-weight-bold text-center" },
+                  [_vm._v("Кейсы Пользователя " + _vm._s(_vm.advertiser.name))]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-3" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "case_create",
+                          params: {
+                            id: _vm.advertiser.id,
+                            type: _vm.type,
+                            case: 0
+                          }
+                        }
+                      }
+                    },
+                    [
+                      _c("button", { staticClass: "btn btn-success py-1" }, [
+                        _vm._v("Добавить кейс")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(12),
+            _vm._v(" "),
+            _vm._l(_vm.cases, function(advcase) {
+              return _c("div", { staticClass: "row py-2 bg-white px-2" }, [
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.type))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.position))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-2" }, [
+                  _vm._v(_vm._s(advcase.place))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.desc))
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-3" }, [
+                  _vm._v(_vm._s(advcase.price))
+                ]),
+                _vm._v(" "),
+                _vm._m(13, true)
+              ])
+            })
+          ],
+          2
+        )
+      : _vm._e()
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Тип")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12" }, [_c("hr")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-6" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12" }, [_c("hr")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-4" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Название")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-4" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Описание")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-12" }, [_c("hr")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-6" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-4" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [
+          _vm._v("Цена в будние дни")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-4" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [
+          _vm._v("Цена в выходные дни")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-4" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Время")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Время")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Тип")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Описание")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Категория")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row pt-4 py-2 bg-white px-2" }, [
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Тип")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Позиция")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-2" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Площадка")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Описание")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-3" }, [
+        _c("p", { staticClass: "font-weight-bold" }, [_vm._v("Цена")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [_c("hr")])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserComponent.vue?vue&type=template&id=3ebbf612&scoped=true&":
 /*!**********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/AdvertiserComponent.vue?vue&type=template&id=3ebbf612&scoped=true& ***!
@@ -38384,7 +40682,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-3 font-size-14 d-flex align-items-center" },
+                { staticClass: "col-2 font-size-14 d-flex align-items-center" },
                 [
                   _c("div", [
                     _c("p", { staticClass: "mb-1" }, [
@@ -38460,7 +40758,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "col-1 font-size-14 d-flex align-items-center "
+                  staticClass: "col-2 font-size-14 d-flex align-items-center "
                 },
                 [
                   _c(
@@ -38473,12 +40771,31 @@ var render = function() {
                     [
                       _c(
                         "div",
-                        { staticClass: "bg-warning px-2 py-1 rounded " },
+                        { staticClass: "bg-warning px-2 py-1 rounded mr-1" },
                         [
                           _c("i", {
                             staticClass: "fas fa-user-edit text-white"
                           })
                         ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      attrs: {
+                        to: {
+                          name: "cases",
+                          params: { id: user.advertiser.id }
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "bg-danger px-2 py-1 rounded" },
+                        [_c("i", { staticClass: "fas fa-suitcase text-white" })]
                       )
                     ]
                   )
@@ -38522,7 +40839,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row border-bottom mb-2 pb-3" }, [
       _c("div", { staticClass: "col-2" }),
       _vm._v(" "),
-      _c("div", { staticClass: "col-3 font-weight-bold" }, [
+      _c("div", { staticClass: "col-2 font-weight-bold" }, [
         _vm._v("\n                ФИО\n            ")
       ]),
       _vm._v(" "),
@@ -38538,7 +40855,7 @@ var staticRenderFns = [
         _vm._v("\n                Категория\n            ")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-1 font-weight-bold" }, [
+      _c("div", { staticClass: "col-2 font-weight-bold" }, [
         _vm._v("\n                Действия\n            ")
       ])
     ])
@@ -38707,29 +41024,25 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm.online == 1
-                  ? _c("div", { staticClass: "col-6" }, [
-                      _c("label", { attrs: { for: "category" } }, [
-                        _vm._v("Платформа рекламодателя")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "select",
-                        {
-                          staticClass: "browser-default custom-select",
-                          attrs: { id: "type" }
-                        },
-                        _vm._l(_vm.types, function(type) {
-                          return _c(
-                            "option",
-                            { domProps: { value: type.id } },
-                            [_vm._v(_vm._s(type.title))]
-                          )
-                        }),
-                        0
-                      )
-                    ])
-                  : _vm._e()
+                _c("div", { staticClass: "col-6" }, [
+                  _c("label", { attrs: { for: "category" } }, [
+                    _vm._v("Платформа рекламодателя")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      staticClass: "browser-default custom-select",
+                      attrs: { id: "type" }
+                    },
+                    _vm._l(_vm.types, function(type) {
+                      return _c("option", { domProps: { value: type.id } }, [
+                        _vm._v(_vm._s(type.title))
+                      ])
+                    }),
+                    0
+                  )
+                ])
               ])
             ])
           ]),
@@ -59029,6 +61342,16 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     name: 'user_show',
     component: __webpack_require__(/*! ./components/UserShowComponent */ "./resources/js/components/UserShowComponent.vue")["default"],
     props: true
+  }, {
+    path: '/cases/:id',
+    name: 'cases',
+    component: __webpack_require__(/*! ./components/AdvertiserCasesComponent */ "./resources/js/components/AdvertiserCasesComponent.vue")["default"],
+    props: true
+  }, {
+    path: '/case_create/:id/:type/:case',
+    name: 'case_create',
+    component: __webpack_require__(/*! ./components/AdvertiserCaseCreateComponent */ "./resources/js/components/AdvertiserCaseCreateComponent.vue")["default"],
+    props: true
   }]
 });
 var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
@@ -59088,6 +61411,144 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCaseCreateComponent.vue":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCaseCreateComponent.vue ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true& */ "./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true&");
+/* harmony import */ var _AdvertiserCaseCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AdvertiserCaseCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6397b98b",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/AdvertiserCaseCreateComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCaseCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCaseCreateComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCaseCreateComponent.vue?vue&type=template&id=6397b98b&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCaseCreateComponent_vue_vue_type_template_id_6397b98b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCasesComponent.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCasesComponent.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0& */ "./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0&");
+/* harmony import */ var _AdvertiserCasesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AdvertiserCasesComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AdvertiserCasesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/AdvertiserCasesComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCasesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./AdvertiserCasesComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCasesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/AdvertiserCasesComponent.vue?vue&type=template&id=3d5413f0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AdvertiserCasesComponent_vue_vue_type_template_id_3d5413f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

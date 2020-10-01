@@ -21,6 +21,13 @@
                     </div>
                 </a>
                 @endif
+                @if(Auth::user()->role->name == 'user2')
+                    <a class="taco-link" href="{{ route('profile/advertiser/profile') }}">
+                        <div class="p-3 d-flex align-items-center sidebar-point">
+                            <div class="d-flex align-items-center"><i class="fas fa-cogs" style="width:30px;"></i></div><span class="ml-1 sidebar-name font-size-16 line-height-120 opensans">Личный кабинет</span>
+                        </div>
+                    </a>
+                @endif
                 <a class="taco-link" href="{{ route('profile/edit') }}">
                 <div class="p-3 d-flex align-items-center sidebar-point">
                     <div class="d-flex align-items-center"><i class="fas fa-cogs" style="width:30px;"></i></div><span class="ml-1 sidebar-name font-size-16 line-height-120 opensans">редактировать</span>

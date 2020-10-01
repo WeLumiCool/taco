@@ -48,6 +48,8 @@ const router = new VueRouter({
         {path: '/user_create', name: 'user_create', component: require('./components/UserCreateComponent').default},
         {path: '/advertiser_create', name: 'advertiser_create', component: require('./components/AdvertiserCreateComponent').default},
         {path: '/user_show/:id', name: 'user_show', component: require('./components/UserShowComponent').default, props: true},
+        {path: '/cases/:id', name: 'cases', component: require('./components/AdvertiserCasesComponent').default, props:true},
+        {path: '/case_create/:id/:type/:case', name: 'case_create', component: require('./components/AdvertiserCaseCreateComponent').default, props:true}
     ],
 });
 

@@ -68,7 +68,7 @@
                                     <option v-for="category in categories" :value="category.id">{{category.title}}</option>
                                 </select>
                             </div>
-                            <div class="col-6" v-if="online == 1">
+                            <div class="col-6">
                                 <label for="category">Платформа рекламодателя</label>
                                 <select class="browser-default custom-select" id="type">
                                     <option v-for="type in types" :value="type.id">{{ type.title }}</option>
@@ -99,7 +99,6 @@
                 csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
                 categories: [],
                 types: [],
-                online: null,
             }
         },
 
@@ -117,14 +116,9 @@
 
             category: function () {
                 var btn = document.getElementById('category');
-                if (btn.value == 2)
-                {
-                    this.online = 1;
-                }
-                else
-                {
-                    this.online = null;
-                }
+                    axios.get('/TypeChange/' + btn.value).then((response) => {
+                        this.types = response.data;
+                    });
             },
 
             avatar: function () {

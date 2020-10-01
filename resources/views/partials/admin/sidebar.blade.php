@@ -20,11 +20,7 @@
             </div>
             </router-link>
 
-                {{--<a class="taco-link" href="{{ route('analytics/index') }}">--}}
-                    <div class="p-3 d-flex align-items-center sidebar-point">
-                        <div class="d-flex align-items-center"><i class="fas fa-briefcase fa-lg" style="width:50px;"></i></div><span class="ml-2 sidebar-name font-size-16 line-height-120 opensans">Кейсы</span>
-                    </div>
-                {{--</a>--}}
+
                 <a class="taco-link" href="{{ route('finances/index') }}">
                     <div class="p-3 d-flex align-items-center sidebar-point">
                         <div class="d-flex align-items-center"><i class="far fa-handshake fa-lg" style="width:50px;"></i></div><span class="ml-2 sidebar-name font-size-16 line-height-120 opensans">Рекламные компании</span>

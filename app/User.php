@@ -41,4 +41,9 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->belongsTo(Advertiser::class);
     }
+
+    public function advcompanies()
+    {
+        return $this->hasMany(AdvCompany::class);
+    }
 }

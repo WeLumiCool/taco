@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\AdvCompany;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BidController extends Controller
 {
     public function index() {
-        return view('advertiser/bid/index');
+        $advs = AdvCompany::where('advertiser_id', Auth::user()->advertiser->id)->get();
+
+        return view('advertiser/bid/index',['advs' => $advs]);
     }
 
     public function market() {

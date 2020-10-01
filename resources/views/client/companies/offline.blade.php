@@ -1,246 +1,274 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-fluid" style="margin-top:100px;">
-        <div class="row justify-content-center">
-            <div class="col-12 bg-white py-4 px-4 content-box">
-                <h3 class="roboto font-size-24" style="color: #556CE0;">
-                    LED-экраны
+    <div class="container-fluid" style="margin-top: 100px;">
+        <div class="row justify-content-center bg-white">
+            <div class="col-12 py-4 px-4">
+                <h3 class="roboto font-size-24 text-center" style="color: #556CE0;">
+                    Выберите тип оффлайн рекламы
                 </h3>
-                <div class="row mt-3">
-                    <div class="col-lg-4 col-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Город, улица, адрес">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6">
-                        <button class="btn taco-btn w-100">Поиск</button>
-                    </div>
-                </div>
-                <div class="row mt-lg-0 mt-3">
-                <div class="col-lg-3 col-12">
-                    <div id="map" style="width: 100%; height: 250px;"></div>
-                </div>
-                <div class="col-lg-9 col-12 mt-lg-0 mt-3">
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                Адрес
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                Количество показов
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                Аудитория
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                Стоимость
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                Московская 15
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                24000
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                Девочки
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                500$
-                                <a href="#" class="small ml-2">Подробнее</a>
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                Чуй 150
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                5000
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                Мальчики
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <p class="font-size-16 mb-0 text-black-50">
-                                400$
-                                <a href="#" class="small ml-2">Подробнее</a>
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-lg-9 col-12">
-                        <h3 class="roboto font-size-24" style="color: #556CE0;">
-                            ТВ
-                        </h3>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Название
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Время показа
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Статистика
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    7 jun-02 aug
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    500$
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    Сумки
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    <a href="#" class="small ml-2">Подробнее</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    7 jun-02 aug
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    500$
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    Телефоны
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    <a href="#" class="small ml-2">Подробнее</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-lg-9 col-12">
-                        <h3 class="roboto font-size-24" style="color: #556CE0;">
-                            Радио
-                        </h3>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Название
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Время показа
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 font-weight-bold text-black-50">
-                                    Статистика
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    7 jun-02 aug
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    500$
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    Сумки
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    <a href="#" class="small ml-2">Подробнее</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    7 jun-02 aug
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    500$
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    Телефоны
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-6">
-                                <p class="font-size-16 mb-0 text-black-50">
-                                    <a href="#" class="small ml-2">Подробнее</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
             </div>
+            <div class="col-3">
+                <a href="{{ route('companies/radio') }}">
+                <div class="type-choice p-4 text-center">
+                    <img class="w-50" src="{{ asset('images/icon/radio.svg') }}" alt="">
+                    <p class="roboto font-size-16 mt-3">Реклама на Радио</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="{{ route('companies/tv') }}">
+                    <div class="type-choice p-4 text-center">
+                        <img class="w-50" src="{{ asset('images/icon/tv.svg') }}" alt="">
+                        <p class="roboto font-size-16 mt-3">Реклама на Телевидении</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
+
+
+    {{--<div class="container-fluid" style="margin-top:100px;">--}}
+        {{--<div class="row justify-content-center">--}}
+            {{--<div class="col-12 bg-white py-4 px-4 content-box">--}}
+                {{--<h3 class="roboto font-size-24" style="color: #556CE0;">--}}
+                    {{--LED-экраны--}}
+                {{--</h3>--}}
+                {{--<div class="row mt-3">--}}
+                    {{--<div class="col-lg-4 col-12">--}}
+                        {{--<div class="form-group">--}}
+                            {{--<input type="text" class="form-control" placeholder="Город, улица, адрес">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-lg-3 col-6">--}}
+                        {{--<button class="btn taco-btn w-100">Поиск</button>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="row mt-lg-0 mt-3">--}}
+                {{--<div class="col-lg-3 col-12">--}}
+                    {{--<div id="map" style="width: 100%; height: 250px;"></div>--}}
+                {{--</div>--}}
+                {{--<div class="col-lg-9 col-12 mt-lg-0 mt-3">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                {{--Адрес--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                {{--Количество показов--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                {{--Аудитория--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                {{--Стоимость--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<hr>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--Московская 15--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--24000--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--Девочки--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--500$--}}
+                                {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<hr>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--Чуй 150--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--5000--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--Мальчики--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-3 col-6">--}}
+                            {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                {{--400$--}}
+                                {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<hr>--}}
+                {{--</div>--}}
+                {{--</div>--}}
+
+                {{--<div class="row mt-5">--}}
+                    {{--<div class="col-lg-9 col-12">--}}
+                        {{--<h3 class="roboto font-size-24" style="color: #556CE0;">--}}
+                            {{--ТВ--}}
+                        {{--</h3>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Название--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Время показа--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Статистика--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--7 jun-02 aug--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--500$--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--Сумки--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--7 jun-02 aug--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--500$--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--Телефоны--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+                {{--<div class="row mt-5">--}}
+                    {{--<div class="col-lg-9 col-12">--}}
+                        {{--<h3 class="roboto font-size-24" style="color: #556CE0;">--}}
+                            {{--Радио--}}
+                        {{--</h3>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Название--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Время показа--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 font-weight-bold text-black-50">--}}
+                                    {{--Статистика--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--7 jun-02 aug--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--500$--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--Сумки--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--7 jun-02 aug--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--500$--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--Телефоны--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-lg-3 col-6">--}}
+                                {{--<p class="font-size-16 mb-0 text-black-50">--}}
+                                    {{--<a href="#" class="small ml-2">Подробнее</a>--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<hr>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 @endsection
 
 @push('scripts')

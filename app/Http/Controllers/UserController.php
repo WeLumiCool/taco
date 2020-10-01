@@ -20,6 +20,20 @@ class UserController extends Controller
         return view('client.profile.edit',['user' => $user]);
     }
 
+    public function profile() {
+        $user = Auth::user();
+        $advertiser = $user->advertiser;
+        if ($advertiser->type_id == 2) {$cases = $advertiser->instagramcases;}
+        else if ($advertiser->type_id == 3) {$cases = $advertiser->tiktokcases;}
+        else if ($advertiser->type_id == 4) {$cases = $advertiser->youtubecases;}
+        else if ($advertiser->type_id == 5) {$cases = $advertiser->vkontaktecases;}
+        else if ($advertiser->type_id == 7) {$cases = $advertiser->radiocases;}
+        else if ($advertiser->type_id == 8) {$cases = $advertiser->tvcases;}
+        else if ($advertiser->type_id == 9) {$cases = $advertiser->onlinecases;}
+
+        return view('advertiser.profile.profile',['user' => $user, 'cases' => $cases]);
+    }
+
     public function admin() {
         return view('admin.index');
     }
