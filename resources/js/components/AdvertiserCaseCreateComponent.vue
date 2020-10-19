@@ -55,13 +55,13 @@
                 <div class="col-3">
                     <p class="font-weight-bold mb-1">Название</p>
                     <div class="md-form mt-0">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Цена" v-model="name" required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Название" v-model="name" required>
                     </div>
                 </div>
                 <div class="col-3">
                     <p class="font-weight-bold mb-1">Описание</p>
                     <div class="md-form mt-0">
-                        <input type="text" name="desc" id="desc" class="form-control" placeholder="Цена" v-model="desc" required>
+                        <input type="text" name="desc" id="desc" class="form-control" placeholder="Описание" v-model="desc" required>
                     </div>
                 </div>
                 <div class="col-3 d-flex align-items-center">

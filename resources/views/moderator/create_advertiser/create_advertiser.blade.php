@@ -52,15 +52,15 @@
         </div>
         <div class="col-4 md-form mt-4">
             <p class="small text-gray mb-1">ФИО <span class="text-danger">*</span></p>
-            <input type="text" name="name" id="name" class="form-control" placeholder="ФИО" required>
+            <input type="text" name="name" id="name" class="form-control" placeholder="ФИО" value="{{ $name }}" required>
         </div>
         <div class="col-4 md-form mt-4">
             <p class="small text-gray mb-1">Email <span class="text-danger">*</span></p>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email" value="{{ $email }}" required>
         </div>
         <div class="col-4 md-form mt-4">
             <p class="small text-gray mb-1">Номер телефона <span class="text-danger">*</span></p>
-            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="phone" id="phone" class="form-control" placeholder="Номер телефона" required>
+            <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="phone" id="phone" class="form-control" value="{{ $phone }}" placeholder="Номер телефона" required>
         </div>
         <div class="col-4 md-form mt-4">
             <p class="small text-gray mb-1">Медийное имя (Название канала, группы и тд) <span class="text-danger">*</span></p>
@@ -94,11 +94,15 @@
                 @endforeach
             </select>
         </div>
-        <div class="col-12 text-center">
-            <button type="submit" class="btn btn-success px-5 py-2 mt-3">Сохранить</button>
-        </div>
+
         <div class="col-12">
             <hr>
+        </div>
+        <div class="col-12 field-content">
+
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-success px-5 py-2 mt-3">Сохранить</button>
         </div>
 
     </div>
@@ -124,6 +128,28 @@
 </script>
 <script>
     setTimeout(preloader, 500);
+</script>
+<script>
+    $(document).on('change','#type', function (e) {
+        var btn = $(e.currentTarget);
+
+        $.ajax({
+            method: "POST",
+            url: '/getFieldAdvertiser',
+            data:
+                {
+                    '_token': "{{ csrf_token() }}",
+                    'type': btn.val(),
+                }
+            ,
+
+            // serializes the form's elements.
+            success: function (data) {
+                $('.field-content').html(data.html);
+                // console.log(data.html);
+            }
+        });
+    })
 </script>
 </body>
 </html>

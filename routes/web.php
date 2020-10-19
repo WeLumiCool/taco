@@ -94,10 +94,12 @@ Route::get('finances/index2','FinanceController@index2')->name('finances/index2'
 
 
 
-Route::get('moderator/advertiser/create','AdvertiserController@moderatorCreate')->name('moderator/advertiser/create');
+Route::get('moderator/advertiser/create/{name}/{email}/{phone}','AdvertiserController@moderatorCreate')->name('moderator/advertiser/create');
 Route::post('moderator/advertiser/store','AdvertiserController@moderatorStore')->name('moderator/advertiser/store');
 Route::get('moderator/advertiser/cases/{user}','AdvertiserController@moderatorCases')->name('moderator/advertiser/cases');
 Route::get('moderator/advertiser/addCase/{id}','AdvertiserController@addCase')->name('moderator/advertiser/addCase');
+Route::post('moderator/advertiser/storeCase','AdvertiserController@storeCase')->name('moderator/advertiser/storeCase');
+Route::post('/getFieldAdvertiser', 'AdvertiserController@getFields')->name('getFieldAdvertiser');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

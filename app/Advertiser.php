@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Advertiser extends Model
 {
+    protected $casts = [
+        'fields' => 'collection',
+    ];
+
     public function category()
     {
         return $this->belongsTo(Category::class);

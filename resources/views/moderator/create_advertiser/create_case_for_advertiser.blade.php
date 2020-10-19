@@ -49,14 +49,24 @@
         </div>
         <div class="col-8 py-3">
             <h4 class="text-center">Кейсы рекламной площадки</h4>
-            <p class="small text-success">Рекламная площадка успешко создана, заполните пожалуйста кейсы</p>
-            <p class="font-size-16 font-weight-light">Имя пользователя: <span class="font-weight-bold">{{ $user->name }}</span></p>
-            <p class="font-size-16 font-weight-light">Email пользователя: <span class="font-weight-bold">{{ $user->email }}</span></p>
-            <p class="font-size-16 font-weight-light">Номер телефона пользователя: <span class="font-weight-bold">{{ $user->phone }}</span></p>
-            <p class="font-size-16 font-weight-light">Медийное имя пользователя: <span class="font-weight-bold">{{ $user->advertiser->name }}</span></p>
-            <p class="font-size-16 font-weight-light">Ссылка на платформу: <span class="font-weight-bold">{{ $user->advertiser->url_address }}</span></p>
-            <p class="font-size-16 font-weight-light">Категория рекламы: <span class="font-weight-bold">{{ \App\Category::find($user->advertiser->category_id)->title }}</span></p>
-            <p class="font-size-16 font-weight-light">Тип рекламы: <span class="font-weight-bold">{{ \App\Type::find($user->advertiser->type_id)->title }}</span></p>
+            <p class="small text-success">Рекламная площадка успешно создана, заполните пожалуйста кейсы</p>
+            <div class="row">
+                <div class="col-6">
+                    <p class="font-size-16 font-weight-light">Имя пользователя: <span class="font-weight-bold">{{ $user->name }}</span></p>
+                    <p class="font-size-16 font-weight-light">Email пользователя: <span class="font-weight-bold">{{ $user->email }}</span></p>
+                    <p class="font-size-16 font-weight-light">Номер телефона пользователя: <span class="font-weight-bold">{{ $user->phone }}</span></p>
+                    <p class="font-size-16 font-weight-light">Медийное имя пользователя: <span class="font-weight-bold">{{ $user->advertiser->name }}</span></p>
+                    <p class="font-size-16 font-weight-light">Ссылка на платформу: <span class="font-weight-bold">{{ $user->advertiser->url_address }}</span></p>
+                    <p class="font-size-16 font-weight-light">Категория рекламы: <span class="font-weight-bold">{{ \App\Category::find($user->advertiser->category_id)->title }}</span></p>
+                    <p class="font-size-16 font-weight-light">Тип рекламы: <span class="font-weight-bold">{{ \App\Type::find($user->advertiser->type_id)->title }}</span></p>
+                </div>
+                <div class="col-6">
+                    @foreach($user->advertiser->fields as $field)
+                        <p class="font-size-16 font-weight-light">{{ $field['title'] }}: <span class="font-weight-bold">{{ $field['value'] }}</span></p>
+                    @endforeach
+                </div>
+            </div>
+
         </div>
         <div class="col-12">
             <hr>
@@ -68,7 +78,6 @@
                 <p class="font-size-18 font-weight-light">Кейсов нет</p>
             @else
                 @if($user->advertiser->type_id == 2)
-                @foreach($cases as $case)
                     <div class="row">
                         <div class="col-6">
                             <p class="font-weight-bold">
@@ -84,6 +93,8 @@
                             <hr>
                         </div>
                     </div>
+                @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-6">
                                 <p class="font-weight-bold">
@@ -101,17 +112,18 @@
                         </div>
                 @endforeach
                     @elseif($user->advertiser->type_id == 3)
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="font-weight-bold">
+                                Цена
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
                         @foreach($cases as $case)
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="font-weight-bold">
-                                        Цена
-                                    </p>
-                                </div>
-                                <div class="col-12">
-                                    <hr>
-                                </div>
-                            </div>
+
                             <div class="row">
                                 <div class="col-6">
                                     <p class="font-weight-bold">
@@ -125,27 +137,28 @@
 
                         @endforeach
                 @elseif($user->advertiser->type_id == 4)
-                    @foreach($cases as $case)
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Цена
-                                </p>
-                            </div>
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Название
-                                </p>
-                            </div>
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Описание
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Цена
+                            </p>
                         </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Название
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Описание
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-4">
                                 <p class="font-weight-bold">
@@ -169,17 +182,18 @@
 
                     @endforeach
                 @elseif($user->advertiser->type_id == 5)
-                    @foreach($cases as $case)
-                        <div class="row">
-                            <div class="col-6">
-                                <p class="font-weight-bold">
-                                    Цена
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="font-weight-bold">
+                                Цена
+                            </p>
                         </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-6">
                                 <p class="font-weight-bold">
@@ -192,27 +206,28 @@
                         </div>
                     @endforeach
                 @elseif($user->advertiser->type_id == 7)
-                    @foreach($cases as $case)
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Время
-                                </p>
-                            </div>
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Цена в будние дни
-                                </p>
-                            </div>
-                            <div class="col-4">
-                                <p class="font-weight-bold">
-                                    Цена в выходные дни
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Время
+                            </p>
                         </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Цена в будние дни
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="font-weight-bold">
+                                Цена в выходные дни
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-4">
                                 <p class="font-weight-bold">
@@ -235,37 +250,38 @@
                         </div>
                     @endforeach
                 @elseif($user->advertiser->type_id == 8)
-                    @foreach($cases as $case)
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Время
-                                </p>
-                            </div>
-                            <div class="col-3">
-                                <p class="font-weight-bold">
-                                    Тип
-                                </p>
-                            </div>
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Цена
-                                </p>
-                            </div>
-                            <div class="col-3">
-                                <p class="font-weight-bold">
-                                    Описание
-                                </p>
-                            </div>
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Категория
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Время
+                            </p>
                         </div>
+                        <div class="col-3">
+                            <p class="font-weight-bold">
+                                Тип
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Цена
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p class="font-weight-bold">
+                                Описание
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Категория
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-2">
                                 <p class="font-weight-bold">
@@ -298,37 +314,38 @@
                         </div>
                     @endforeach
                 @elseif($user->advertiser->type_id == 9)
-                    @foreach($cases as $case)
-                        <div class="row">
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Тип
-                                </p>
-                            </div>
-                            <div class="col-3">
-                                <p class="font-weight-bold">
-                                    Расположения рекламы
-                                </p>
-                            </div>
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Платформа
-                                </p>
-                            </div>
-                            <div class="col-3">
-                                <p class="font-weight-bold">
-                                    Описание
-                                </p>
-                            </div>
-                            <div class="col-2">
-                                <p class="font-weight-bold">
-                                    Цена
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <hr>
-                            </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Тип
+                            </p>
                         </div>
+                        <div class="col-3">
+                            <p class="font-weight-bold">
+                                Расположения рекламы
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Платформа
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p class="font-weight-bold">
+                                Описание
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="font-weight-bold">
+                                Цена
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($cases as $case)
+
                         <div class="row">
                             <div class="col-2">
                                 <p class="font-weight-bold">
@@ -363,7 +380,7 @@
                 @endif
             @endif
             <div class="d-flex justify-content-center">
-                <a href="{{ route('moderator/advertiser/addCase', $user->advertiser) }}">
+                <a href="{{ route('moderator/advertiser/addCase', $user->advertiser->id) }}">
                 <div class="bg-success d-flex align-items-center justify-content-center px-3" style="width: auto; height: 40px; border-radius: 30px;">
                     <p class="text-white mr-2 mb-0">Добавить кейс</p><i class="far fa-plus-square fa-lg text-white"></i>
                 </div>

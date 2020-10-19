@@ -22,4 +22,9 @@ class Type extends Model
     {
         return $this->hasMany(AdvCompany::class);
     }
+
+    public function fieldtypes()
+    {
+        return $this->belongsToMany(FieldType::class);
+    }
 }
